@@ -1,15 +1,36 @@
 export default {
   state: {
-    headerInfo: [
+    headerStars: [
       {
         id: 1,
-        title: "Your engine for answers.",
+        stars: "stars-icon.svg",
+        alt: "icon-1",
+      },
+      {
+        id: 2,
+        stars: "stars-icon.svg",
+        alt: "icon-2",
+      },
+      {
+        id: 3,
+        stars: "stars-icon.svg",
+        alt: "icon-3",
+      },
+      {
+        id: 4,
+        stars: "stars-icon.svg",
+        alt: "icon-3",
+      },
+      {
+        id: 5,
+        stars: "stars-icon.svg",
+        alt: "icon-3",
       },
     ],
   },
   getters: {
-    getHeaderInfo(state) {
-      return state.headerInfo;
+    getHeaderStars(state) {
+      return state.headerStars;
     },
   },
 };
