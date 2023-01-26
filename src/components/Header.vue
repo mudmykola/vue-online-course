@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style lang="scss">
+@use "src/styles/variables" as var;
 .header {
   height: 100vh;
   width: 100%;

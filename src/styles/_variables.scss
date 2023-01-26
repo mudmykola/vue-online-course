@@ -83,3 +83,18 @@ $desktop__basic: 1440px;
   height: 48px;
   color: $default;
 }
+%global-btn {
+  background: $c200;
+  color: $default;
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: $font-m;
+  padding: 14px 36px;
+  border-radius: 15px;
+  @extend %dtrans;
+  &:hover {
+    background: $c300;
+    @extend %htrans;
+  }
+}
