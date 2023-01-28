@@ -24,6 +24,7 @@ export default {
         {
           link: "Discover all classes",
           state: true,
+          type: Object,
         },
       ],
     };

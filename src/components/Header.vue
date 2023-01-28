@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="header"
-    :style="'background:url(' + bgImg + ' ) center top no-repeat '"
-  >
+  <div class="header" :style="bg">
     <Navigation />
     <HeaderContent />
   </div>
@@ -14,11 +11,16 @@ import Navigation from "@/components/Navigation.vue";
 import HeaderContent from "@/components/UI/HeaderContent.vue";
 
 export default {
-  data() {
-    return {
-      bgImg: bgImage,
-    };
+  computed: {
+    bg() {
+      return {
+        "background-image": `url(${bgImage})`,
+        "background-repeat": "no-repeat",
+        "background-size": "cover",
+      };
+    },
   },
+
   name: "TheHeader",
   components: {
     Navigation,

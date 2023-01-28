@@ -1,6 +1,7 @@
 import { createStore } from "vuex";
 import header from "./modules/header";
 import why from "./modules/why";
+import benefits from "./modules/benefits";
 
 export default createStore({
   state: {},
@@ -10,5 +11,6 @@ export default createStore({
   modules: {
     header,
     why,
+    benefits,
   },
 });

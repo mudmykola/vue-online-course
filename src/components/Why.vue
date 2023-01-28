@@ -1,8 +1,10 @@
 <template>
   <div class="why" :style="{ 'background-color': bgColor }">
     <div class="container">
-      <WhyContent />
-      <WhyImage />
+      <div class="why-inner">
+        <WhyContent />
+        <WhyImage />
+      </div>
     </div>
   </div>
 </template>
@@ -10,6 +12,7 @@
 <script>
 import WhyContent from "@/components/UI/WhyContent.vue";
 import WhyImage from "@/components/UI/WhyImage.vue";
+
 export default {
   name: "TheWhy",
   components: {
@@ -18,7 +21,7 @@ export default {
   },
   data() {
     return {
-      bgColor: "#1E1E1E",
+      bgColor: "#151515",
     };
   },
 };
@@ -27,8 +30,14 @@ export default {
 <style lang="scss">
 @use "src/styles/variables" as var;
 .why {
-  padding-top: 79px;
+  padding: 79px 0 82px;
+
   color: var.$default;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 // 768
 @media (max-width: 768px) {
