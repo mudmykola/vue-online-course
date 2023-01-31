@@ -28,7 +28,7 @@ export default {
     display: inline-block;
     width: 500px;
 
-    height: 50%;
+    height: 80%;
     background: var.$c200;
     bottom: 0%;
     right: 0%;

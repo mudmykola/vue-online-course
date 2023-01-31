@@ -93,5 +93,22 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+  .header-cont {
+    width: 280px;
+    margin-top: 80px;
+    padding-bottom: 50px;
+
+    h1 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__state {
+      margin-bottom: 20px;
+    }
+  }
 }
 </style>

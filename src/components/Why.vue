@@ -50,5 +50,11 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+  .why {
+    padding: 50px 0;
+    &-inner {
+      display: grid;
+    }
+  }
 }
 </style>

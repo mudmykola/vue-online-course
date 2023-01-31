@@ -108,5 +108,24 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+  .email {
+    label {
+      input {
+        width: 160px;
+        height: 35px;
+        border-radius: 8px 0 0 8px;
+        font-size: 12px;
+        line-height: 20px;
+      }
+      button {
+        display: block;
+        height: 35px;
+        padding: 0 10px;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 0 8px 8px 0;
+      }
+    }
+  }
 }
 </style>
