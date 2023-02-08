@@ -69,5 +69,11 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+  .about{
+    &-inner{
+      flex-direction: column;
+      width: 280px;
+    }
+  }
 }
 </style>

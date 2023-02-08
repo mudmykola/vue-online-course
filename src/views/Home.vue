@@ -3,6 +3,7 @@
   <Why />
   <Benefits />
   <About />
+  <Community />
 </template>
 
 <script>
@@ -11,6 +12,7 @@ import Header from "@/components/Header.vue";
 import Why from "@/components/Why.vue";
 import Benefits from "@/components/Benefits.vue";
 import About from "@/components/About.vue";
+import Community from "@/components/Community.vue";
 
 export default {
   name: "TheHome",
@@ -19,6 +21,7 @@ export default {
     Why,
     Benefits,
     About,
+    Community,
   },
 };
 </script>

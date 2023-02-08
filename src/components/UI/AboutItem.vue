@@ -80,5 +80,20 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+  .about-item{
+    width: 280px;
+    margin: 0;
+    h2{
+      font-size: 40px;
+      line-height: 45px;
+    }
+    &__links{
+      a{
+        width: 250px;
+        height: 50px;
+        border-radius: 10px;
+      }
+    }
+  }
 }
 </style>

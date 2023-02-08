@@ -61,5 +61,12 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+  .benefits{
+    padding: 50px 0;
+    &-inner{
+      width: 280px;
+      flex-direction: column;
+    }
+  }
 }
 </style>
