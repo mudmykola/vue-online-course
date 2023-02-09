@@ -94,17 +94,17 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
-.benefits-item{
-  width: 280px;
-  margin: 0;
-  h2{
-    margin-top: 30px;
-    font-size: 40px;
-    line-height: 45px;
+  .benefits-item {
+    width: 260px;
+    margin: 0;
+    h2 {
+      margin-top: 30px;
+      font-size: 40px;
+      line-height: 45px;
+    }
+    ul {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
-  ul{
-    grid-template-columns: repeat(1,1fr);
-  }
-}
 }
 </style>

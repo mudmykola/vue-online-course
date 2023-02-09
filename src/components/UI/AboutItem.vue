@@ -80,18 +80,19 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
-  .about-item{
-    width: 280px;
+  .about-item {
+    width: 260px;
     margin: 0;
-    h2{
+    h2 {
       font-size: 40px;
       line-height: 45px;
     }
-    &__links{
-      a{
-        width: 250px;
-        height: 50px;
+    &__links {
+      a {
+        width: 230px;
+        height: 40px;
         border-radius: 10px;
+        padding: 6px 0;
       }
     }
   }

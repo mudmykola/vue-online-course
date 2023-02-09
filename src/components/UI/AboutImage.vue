@@ -48,10 +48,10 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
-  .about-image{
+  .about-image {
     margin-top: 30px;
-    &:after{
-      width: 290px;
+    &:after {
+      width: 270px;
     }
   }
 }

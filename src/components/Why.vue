@@ -55,9 +55,8 @@ export default {
     padding: 50px 0;
     &-inner {
       display: grid;
-      width: 280px;
+      width: 260px;
     }
-
   }
 }
 </style>

@@ -94,7 +94,7 @@ export default {
 // 320
 @media (max-width: 320px) {
   .header-cont {
-    width: 280px;
+    width: 260px;
     margin-top: 80px;
     padding-bottom: 50px;
 

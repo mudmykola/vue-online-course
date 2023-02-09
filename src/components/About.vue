@@ -69,10 +69,13 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
-  .about{
-    &-inner{
+  .about {
+    &-inner {
       flex-direction: column;
-      width: 280px;
+      width: 260px;
+      &__line {
+        width: 260px;
+      }
     }
   }
 }

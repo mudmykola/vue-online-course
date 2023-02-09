@@ -47,10 +47,10 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
-  .why-img{
+  .why-img {
     margin-top: 30px;
-    &:after{
-      width: 280px;
+    &:after {
+      width: 260px;
       left: -5%;
     }
   }
