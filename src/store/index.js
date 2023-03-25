@@ -3,6 +3,7 @@ import header from "./modules/header";
 import why from "./modules/why";
 import benefits from "./modules/benefits";
 import offer from "./modules/offer";
+import mentors from "./modules/mentors";
 
 export default createStore({
   state: {},
@@ -14,5 +15,6 @@ export default createStore({
     why,
     benefits,
     offer,
+    mentors
   },
 });
