@@ -5,6 +5,7 @@
   <About />
   <Community />
   <Offer />
+  <Mentors />
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import Benefits from "@/components/Benefits.vue";
 import About from "@/components/About.vue";
 import Community from "@/components/Community.vue";
 import Offer from "@/components/Offer.vue";
+import Mentors from "@/components/Mentors.vue";
 
 export default {
   name: "TheHome",
@@ -25,6 +27,7 @@ export default {
     About,
     Community,
     Offer,
+    Mentors,
   },
 };
 </script>
