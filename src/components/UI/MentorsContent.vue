@@ -6,13 +6,18 @@
         <p>{{ mentors_data.desc }}</p>
       </div>
       <div class="mentors-content__btn">
-        <button @click="viewMore">{{ btnText }}</button>
+        <button :class="{'active' : isActive}" @click="viewMore">{{
+            btnText
+          }}
+        </button>
       </div>
     </div>
     <div class="mentors-content__item">
       <ul>
-        <li v-for="item in MENTORS_ITEM"
-            :key="item.id">
+        <li v-for="(item, index) in MENTORS_ITEM"
+            :key="item.id" v-show="showAll || index < 4"
+
+        >
           <div class="mentors-content__box">
             <img :src="require('/src/assets/' + item.avatar)"
                  :alt="item.alt">
@@ -36,11 +41,14 @@ import {mapGetters, mapActions} from "vuex";
 
 export default {
   name: "MentorsContent",
+  data() {
+    return {
+      showAll: false,
+      btnText: 'View More',
+      isActive: false,
+    }
+  },
   props: {
-    btnText: {
-      type: String,
-      default: 'View More',
-    },
     mentors_data: {
       type: Object,
       default() {
@@ -55,6 +63,14 @@ export default {
 
   methods: {
     viewMore() {
+      this.showAll = !this.showAll;
+      if (this.showAll) {
+        this.btnText = 'View Less';
+        this.isActive = true;
+      } else {
+        this.btnText = 'View More';
+        this.isActive = false;
+      }
     }
   }
 }
@@ -65,6 +81,7 @@ export default {
 @use "src/styles/variables" as var;
 
 .mentors-content {
+  margin-top: 147px;
   &__top {
     display: flex;
     align-items: center;
