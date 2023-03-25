@@ -9,7 +9,7 @@
         :to="logo.url"
         :exact="logo.exact"
         :title="logo.title"
-        :target="_blank"
+
       >
         {{ logo.title }}
       </router-link>
