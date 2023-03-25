@@ -39,6 +39,7 @@ export default {
                 skill2: 'Middle',
                 btn: 'View Details',
             },
+<<<<<<< HEAD
             {
                 id: 5,
                 avatar: 'avatar-1.png',
@@ -75,6 +76,8 @@ export default {
                 skill2: 'Middle',
                 btn: 'View Details',
             },
+=======
+>>>>>>> origin/dev
         ],
     },
     mutations: {
