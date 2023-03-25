@@ -1,4 +1,5 @@
 <template>
+  //Form
   <form class="email" @submit.prevent="sendEmail">
     <label for="email" v-for="(btn, idx) in buttons" :key="idx">
       <input
