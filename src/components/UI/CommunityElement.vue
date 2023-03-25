@@ -50,6 +50,9 @@ export default {
     justify-content: center;
     align-items: center;
     text-align: center;
+    @extend %dtrans;
+    cursor: pointer;
+
     &:after {
       position: absolute;
       content: "";
@@ -84,7 +87,11 @@ export default {
     width: 382px;
     height: 382px;
     border-radius: 100%;
-
+    cursor: pointer;
+    &:hover{
+      background: var.$c200;
+      @extend %htrans;
+    }
     h2 {
       font-size: 37px;
       line-height: 42px;
@@ -94,6 +101,7 @@ export default {
   &__net {
     margin-right: 258px;
     position: relative;
+
     &:after {
       position: absolute;
       content: "";

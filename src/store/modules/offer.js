@@ -15,11 +15,15 @@ export default {
         arrowLink: "arrow-link.svg",
         altArrow:'arrow-link',
       },
+
+
     ],
+
   },
   getters: {
     OFFER_CONTENT(state) {
       return state.offerContent;
     },
+
   },
 };
