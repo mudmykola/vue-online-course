@@ -1,38 +1,41 @@
 <template>
-  <div class="benefits" :style="{ 'background-color': bgColor }">
+  <div class="about">
     <div class="container">
-      <div class="benefits-inner">
-        <BenefitsImage />
-        <BenefitsItem
-          v-for="item in content"
-          :key="item.id"
-          :benefit_data="item"
+      <div class="about-inner">
+        <AboutItem
+          v-for="about in content"
+          :key="about.id"
+          :about_data="about"
+          :aboutimg_data="about"
         />
+        <AboutImage />
       </div>
+      <div class="about-inner__line"></div>
     </div>
   </div>
 </template>
 
 <script>
-import BenefitsImage from "@/components/UI/BenefitsImage.vue";
-import BenefitsItem from "@/components/UI/BenefitsItem.vue";
+import AboutItem from "@/components/UI/AboutItem.vue";
+import AboutImage from "@/components/UI/AboutImage.vue";
 
 export default {
-  name: "TheBenefits",
+  name: "TheAbout",
   components: {
-    BenefitsImage,
-    BenefitsItem,
+    AboutItem,
+    AboutImage,
   },
   data() {
     return {
       content: [
         {
           id: 1,
-          title: "Subscription and benefits.",
+          title: "Share about the community.",
           desc: "We also ensure that our courses are affordable to anyone and accessible from anywhere in the world. Our exceptional mentors are there to guide our students in pursuit of their life aspirations. Together we build a community that supports each other and make the whole experience into another level. ",
+          btn: "Get started",
+          link: "Learn more",
         },
       ],
-      bgColor: "#1F1F1F",
     };
   },
 };
@@ -40,13 +43,18 @@ export default {
 
 <style lang="scss">
 @use "src/styles/variables" as var;
-.benefits {
+.about {
   color: var.$default;
-  padding: 92px 0 111px;
+  padding: 92px 0 0;
   &-inner {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    &__line {
+      border: 1px solid var.$default;
+      opacity: 0.7;
+      margin: 98px 0 80px;
+    }
   }
 }
 
@@ -61,11 +69,13 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
-  .benefits {
-    padding: 50px 0;
+  .about {
     &-inner {
-      width: 260px;
       flex-direction: column;
+      width: 260px;
+      &__line {
+        width: 260px;
+      }
     }
   }
 }

@@ -46,5 +46,8 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+  .header {
+    height: 100%;
+  }
 }
 </style>

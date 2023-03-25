@@ -82,4 +82,29 @@ export default {
     }
   }
 }
+
+// 768
+@media (max-width: 768px) {
+}
+// 600
+@media (max-width: 600px) {
+}
+// 480
+@media (max-width: 480px) {
+}
+// 320
+@media (max-width: 320px) {
+  .benefits-item {
+    width: 260px;
+    margin: 0;
+    h2 {
+      margin-top: 30px;
+      font-size: 40px;
+      line-height: 45px;
+    }
+    ul {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
 </style>

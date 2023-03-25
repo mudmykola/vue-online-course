@@ -88,5 +88,11 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+  .why-content {
+    width: 260px;
+    ul {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }
 </style>

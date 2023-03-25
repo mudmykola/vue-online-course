@@ -1,17 +1,17 @@
 <template>
-  <div class="benefits-image">
+  <div class="about-image">
     <img :src="img" alt="alt" />
   </div>
 </template>
 
 <script>
-import image from "@/assets/benefits-img.png";
+import aboutimgs from "@/assets/about-img.png";
 export default {
-  name: "TheBenefitsImage",
+  name: "TheAboutImage",
   data() {
     return {
-      img: image,
-      alt: "benefits-img",
+      img: aboutimgs,
+      alt: "about-img",
       type: Object,
     };
   },
@@ -20,21 +20,20 @@ export default {
 
 <style lang="scss">
 @use "src/styles/variables" as var;
-
-.benefits-image {
+.about-image {
   position: relative;
-  z-index: 999;
   &::after {
     position: absolute;
     content: "";
     display: inline-block;
-    width: 100%;
-    height: 50%;
+    width: 500px;
+
+    height: 80%;
     background: var.$c200;
-    bottom: 0;
-    right: 7%;
-    border-radius: 8px;
+    bottom: 0%;
+    right: 0%;
     z-index: -1;
+    border-radius: 8px;
   }
 }
 
@@ -49,10 +48,11 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
-.benefits-image{
-  &:after{
-    right: 5%;
+  .about-image {
+    margin-top: 30px;
+    &:after {
+      width: 270px;
+    }
   }
-}
 }
 </style>

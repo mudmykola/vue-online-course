@@ -13,21 +13,19 @@
       >
         {{ logo.title }}
       </router-link>
-      <nav class="navigation-menu" :class="{ active: isActive }">
+      <nav class="navigation-menu">
         <router-link
           v-for="link in links"
           :key="link"
           class="navigation-menu__link"
-          :class="link.class"
-          active-class="active"
           :to="link.url"
           :exact="link.exact"
           :title="link.title"
-          @click="closeNavigation"
         >
           {{ link.title }}
         </router-link>
       </nav>
+      <BurgerMenu />
       <Button />
     </div>
   </div>
@@ -35,12 +33,11 @@
 
 <script>
 import Button from "@/components/UI/Button.vue";
+import BurgerMenu from "@/components/UI/BurgerMenu.vue";
 export default {
   name: "TheNavigation",
   data() {
     return {
-      isActive: false,
-      isMobile: true,
       links: [
         { title: "Home", url: "/", exact: true },
         { title: "Courses", url: "/", exact: true },
@@ -52,12 +49,14 @@ export default {
           title: "Edumena",
           url: "/",
           exact: true,
+          type: String,
         },
       ],
     };
   },
   components: {
     Button,
+    BurgerMenu,
   },
 };
 </script>
@@ -103,5 +102,13 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+  .navigation {
+    position: relative;
+    width: 270px;
+    padding-top: 20px;
+    &-menu {
+      display: none;
+    }
+  }
 }
 </style>

@@ -1,15 +1,16 @@
 <template>
-  <form class="email" method="POST">
+  //Form
+  <form class="email" @submit.prevent="sendEmail">
     <label for="email" v-for="(btn, idx) in buttons" :key="idx">
       <input
         class="email-input"
-        for="email"
-        type="email"
         placeholder="Your email"
         required
         v-model="email"
+        type="email"
+        name="email"
       />
-      <button>{{ btn.link }}</button>
+      <button type="submit">{{ btn.link }}</button>
     </label>
 
     <span v-if="msg.email">{{ msg.email }}</span>
@@ -17,12 +18,14 @@
 </template>
 
 <script>
+import emailjs from "emailjs-com";
 export default {
   name: "EmailForm",
   data() {
     return {
       showModal: false,
       email: "",
+
       msg: [],
       buttons: [
         {
@@ -50,6 +53,22 @@ export default {
       } else {
         this.msg["email"] = "Please enter a valid email address";
       }
+    },
+    sendEmail(e) {
+      try {
+        emailjs.sendForm(
+          "service_4w4kz6j",
+          "template_vujjikb",
+          e.target,
+          "qu0ktEzf6O9DZCggs",
+          {
+            email: this.email,
+          }
+        );
+      } catch (error) {
+        console.log({ error });
+      }
+      this.email = "";
     },
   },
 };
@@ -108,5 +127,24 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+  .email {
+    label {
+      input {
+        width: 160px;
+        height: 35px;
+        border-radius: 8px 0 0 8px;
+        font-size: 12px;
+        line-height: 20px;
+      }
+      button {
+        display: block;
+        height: 35px;
+        padding: 0 10px;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 0 8px 8px 0;
+      }
+    }
+  }
 }
 </style>

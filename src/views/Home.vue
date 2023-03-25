@@ -2,6 +2,9 @@
   <Header />
   <Why />
   <Benefits />
+  <About />
+  <Community />
+  <Offer />
 </template>
 
 <script>
@@ -9,6 +12,9 @@
 import Header from "@/components/Header.vue";
 import Why from "@/components/Why.vue";
 import Benefits from "@/components/Benefits.vue";
+import About from "@/components/About.vue";
+import Community from "@/components/Community.vue";
+import Offer from "@/components/Offer.vue";
 
 export default {
   name: "TheHome",
@@ -16,6 +22,9 @@ export default {
     Header,
     Why,
     Benefits,
+    About,
+    Community,
+    Offer,
   },
 };
 </script>
