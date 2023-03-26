@@ -8,13 +8,15 @@
 <!-- MentorsVideo List -->
   <div class="mentors-video__list">
     <ul>
-      <li>
+      <li v-for="item in MENTORS_VIDEO" :key="item.id">
         <div class="mentors-video__box">
           <video src=""></video>
-          <h2></h2>
-          <p></p>
-          <div class="mentors-video__box--like">
-            <span></span>
+          <h2>{{item.title}}</h2>
+          <p>{{item.desc}}</p>
+          <div class="mentors-video__box--like" v-for="item in MENTORS_STARS"
+               :key="item.id">
+            <img :src="require('/src/assets/' + item.iconStars)"
+                 :alt="item.iconAlt">
             <p></p>
           </div>
         </div>
@@ -25,6 +27,9 @@
 </template>
 
 <script>
+import {mapGetters} from "vuex";
+
+
 export default {
   name: "MentorsVideo",
   props:{
@@ -35,6 +40,11 @@ export default {
       },
     }
   },
+  computed: {
+    ...mapGetters(['MENTORS_VIDEO']),
+   ...mapGetters(['MENTORS_STARS']),
+
+  }
 }
 </script>
 
