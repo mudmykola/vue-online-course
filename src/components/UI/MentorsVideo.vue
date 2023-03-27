@@ -33,16 +33,21 @@
         </li>
       </ul>
     </div>
+    <!-- MentorsBanner -->
+    <MentorsBanner/>
   </div>
 </template>
 
 <script>
 import {mapGetters} from "vuex";
+import MentorsBanner from "@/components/UI/MentorsBanner.vue";
 
 
 export default {
   name: "MentorsVideo",
-
+components:{
+    MentorsBanner,
+},
   props: {
     mentorsVideo_data: {
       type: Object,
@@ -149,8 +154,10 @@ export default {
 
     }
   }
+
   &-player {
     position: relative;
+
     video {
       border-radius: 24px;
     }
