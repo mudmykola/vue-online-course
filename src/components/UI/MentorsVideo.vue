@@ -10,7 +10,7 @@
     <ul>
       <li v-for="item in MENTORS_VIDEO" :key="item.id">
         <div class="mentors-video__box">
-          <video src=""></video>
+          <video :src="require('/src/assets/video/' + item.video)"></video>
           <h2>{{item.title}}</h2>
           <p>{{item.desc}}</p>
           <div class="mentors-video__box--like" v-for="item in MENTORS_STARS"

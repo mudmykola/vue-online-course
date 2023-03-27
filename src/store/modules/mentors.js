@@ -85,6 +85,7 @@ export default {
                     ' here. teach will provide facilities hope you like that',
                 icon:  'stars-icon.svg',
                 number: '5.0',
+                video: 'video.mp4',
             }
         ],
         mentorsVideoStars: [
