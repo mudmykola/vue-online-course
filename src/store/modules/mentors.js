@@ -86,7 +86,32 @@ export default {
                 icon:  'stars-icon.svg',
                 number: '5.0',
                 video: 'video.mp4',
-            }
+
+            },
+            {
+                id: 2,
+                title: 'Learn to sketch UI design and\n' +
+                    'find lots of inspiration',
+                desc: 'Learn ui sketching, explore a lot about UI\n' +
+                    'and find stunning inspiration for your\n' +
+                    'designs, happy learning',
+                icon:  'stars-icon.svg',
+                number: '5.0',
+                video: 'video-2.mp4',
+
+            },
+            {
+                id: 3,
+                title: 'Show your personality\n' +
+                    'and creativitas',
+                desc: 'Show and work with our team. Learn\n' +
+                    'together and create works with a very\n' +
+                    'useful instructors',
+                icon:  'stars-icon.svg',
+                number: '5.0',
+                video: 'video.mp4',
+
+            },
         ],
         mentorsVideoStars: [
             {
