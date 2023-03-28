@@ -56,8 +56,10 @@ components:{
           id:1,
           bannerTitle: 'Stream anywhere.\n' +
               'Cancel anytime.',
+
         }
       ],
+
     }
   },
   props: {
@@ -67,7 +69,8 @@ components:{
       default() {
         return {};
       },
-    }
+    },
+
   },
   computed: {
     ...mapGetters(['MENTORS_VIDEO']),
