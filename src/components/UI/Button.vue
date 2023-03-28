@@ -1,7 +1,8 @@
 <template>
-  <button v-for="(btn, idx) in buttons" :key="idx" :class="['buttonStyle', { [buttonColor]: true }]"  >
+  <button v-for="(btn, idx) in buttons" :key="idx"  :class="['buttonStyle', {
+    [buttonColor]: true }]"
+  >
     <span  :style="{ color: buttonTextColor }"> {{ btn.link }}</span>
-
   </button>
 </template>
 
@@ -22,12 +23,7 @@ export default {
       required: true,
       default: "#fff",
     },
-    buttonStyles: {
-      type: Object,
-      default() {
-        return {};
-      },
-    },
+
   },
   data() {
     return {
@@ -66,9 +62,7 @@ export default {
       @extend %htrans;
     }
   }
-.white {
-  background-color: var.$default;
-}
+
 
 // 768
 @media (max-width: 768px) {

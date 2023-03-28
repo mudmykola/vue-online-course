@@ -3,19 +3,14 @@
   >
     <div class="mentors-banner__box">
       <h2>{{ mentorsBanner_data.bannerTitle }}</h2>
-      <Button
-          :buttonStyles="{ backgroundColor: '#fff' }"
-          class="mentors-banner__btn"
-          :buttonColor="'white'"
-          button-text-color="#1f1f1f"
-          :buttonLink="'Get Started'"/>
+      <MentorsBannerBtn/>
     </div>
 
   </div>
 </template>
 
 <script>
-import Button from "@/components/UI/Button.vue";
+import MentorsBannerBtn from "@/components/UI/MentorsBannerBtn.vue";
 
 export default {
   name: "MentorsBanner",
@@ -27,6 +22,7 @@ export default {
         return {};
       },
     },
+
   },
   data() {
     return {
@@ -34,7 +30,7 @@ export default {
     }
   },
   components: {
-    Button,
+    MentorsBannerBtn,
   },
 }
 </script>
@@ -51,7 +47,26 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    h2{
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: var.$font-sb;
+      width: 400px;
+    }
   }
+
+}
+// 768
+@media (max-width: 768px) {
+}
+// 600
+@media (max-width: 600px) {
+}
+// 480
+@media (max-width: 480px) {
+}
+// 320
+@media (max-width: 320px) {
 
 }
 </style>
