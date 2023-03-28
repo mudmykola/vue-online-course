@@ -2,7 +2,7 @@
   <div class="mentors" :style="{ 'background-color': bgColor }">
     <div class="container">
       <MentorsContent v-for="item in content" :key="item.id"
-                      :mentors_data="item"/>
+                      :mentors_data="item"  />
     </div>
   </div>
 </template>
@@ -38,6 +38,7 @@ export default {
 
 .mentors {
   color: var.$default;
+  padding-bottom: 81px;
 
 }
 </style>

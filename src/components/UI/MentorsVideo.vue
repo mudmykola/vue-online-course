@@ -34,7 +34,8 @@
       </ul>
     </div>
     <!-- MentorsBanner -->
-    <MentorsBanner/>
+    <MentorsBanner v-for="item in content" :key="item.id"
+                   :mentorsBanner_data="item" />
   </div>
 </template>
 
@@ -48,6 +49,17 @@ export default {
 components:{
     MentorsBanner,
 },
+  data(){
+    return{
+      content: [
+        {
+          id:1,
+          bannerTitle: 'Stream anywhere.\n' +
+              'Cancel anytime.',
+        }
+      ],
+    }
+  },
   props: {
     mentorsVideo_data: {
       type: Object,
