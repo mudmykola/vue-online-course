@@ -77,6 +77,69 @@ export default {
                 btn: 'View Details',
             },
         ],
+        mentorsVideo: [
+            {
+                id: 1,
+                title: 'Designing digital product for enterprise company',
+                desc: 'You can create a design by maintaining your content' +
+                    ' here. teach will provide facilities hope you like that',
+                icon:  'stars-icon.svg',
+                number: '5.0',
+                video: 'video.mp4',
+
+            },
+            {
+                id: 2,
+                title: 'Learn to sketch UI design and\n' +
+                    'find lots of inspiration',
+                desc: 'Learn ui sketching, explore a lot about UI\n' +
+                    'and find stunning inspiration for your\n' +
+                    'designs, happy learning',
+                icon:  'stars-icon.svg',
+                number: '5.0',
+                video: 'video-2.mp4',
+
+            },
+            {
+                id: 3,
+                title: 'Show your personality\n' +
+                    'and creativitas',
+                desc: 'Show and work with our team. Learn\n' +
+                    'together and create works with a very\n' +
+                    'useful instructors',
+                icon:  'stars-icon.svg',
+                number: '5.0',
+                video: 'video.mp4',
+
+            },
+        ],
+        mentorsVideoStars: [
+            {
+                id: 1,
+                iconStars: 'stars-icon.svg',
+                iconAlt: 'stars-icon',
+            },
+            {
+                id: 2,
+                iconStars: 'stars-icon.svg',
+                iconAlt: 'stars-icon',
+            },
+            {
+                id: 3,
+                iconStars: 'stars-icon.svg',
+                iconAlt: 'stars-icon',
+            },
+            {
+                id: 4,
+                iconStars: 'stars-icon.svg',
+                iconAlt: 'stars-icon',
+            },
+            {
+                id: 5,
+                iconStars: 'stars-icon.svg',
+                iconAlt: 'stars-icon',
+            },
+        ],
     },
     mutations: {
         SET_CARD(state, mentorsItem) {
@@ -95,6 +158,12 @@ export default {
     getters: {
         MENTORS_ITEM(state) {
             return state.mentorsItem;
+        },
+        MENTORS_VIDEO(state){
+            return state.mentorsVideo;
+        },
+        MENTORS_STARS(state){
+            return state.mentorsVideoStars;
         },
     },
 };

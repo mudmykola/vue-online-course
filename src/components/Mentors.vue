@@ -38,6 +38,7 @@ export default {
 
 .mentors {
   color: var.$default;
+  padding-bottom: 81px;
 
 }
 </style>

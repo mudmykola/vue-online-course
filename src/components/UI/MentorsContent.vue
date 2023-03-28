@@ -33,12 +33,14 @@
       </ul>
 
     </div>
+    <MentorsVideo v-for="item in content" :key="item.id"
+                  :mentorsVideo_data="item" />
   </div>
 </template>
 
 <script>
 import {mapGetters, mapActions} from "vuex";
-
+import MentorsVideo from "@/components/UI/MentorsVideo.vue";
 export default {
   name: "MentorsContent",
   data() {
@@ -46,6 +48,14 @@ export default {
       showAll: false,
       btnText: 'View More',
       isActive: false,
+      content: [
+        {
+          id:1,
+          title: 'Explore courses from industry leaders.',
+          desc: 'Mentors around the world  teach millions of participants\n' +
+              'on Edumena. We provide the tools and skills',
+        }
+      ],
     }
   },
   props: {
@@ -55,6 +65,9 @@ export default {
         return {};
       },
     }
+  },
+  components:{
+    MentorsVideo,
   },
   computed: {
     ...mapGetters(['MENTORS_ITEM']),
@@ -117,11 +130,14 @@ export default {
       color: var.$c100;
       border: none;
       @extend %dtrans;
-      &:hover{
-        background: var.$c300;
+
+      &.active{
+      background: var.$c300;
         @extend %htrans;
         color: var.$default;
-      }
+        @extend %border-ef;
+    }
+
     }
   }
 
