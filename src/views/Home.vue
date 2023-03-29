@@ -6,6 +6,7 @@
   <Community />
   <Offer />
   <Mentors />
+  <Reviews />
 </template>
 
 <script>
@@ -17,6 +18,7 @@ import About from "@/components/About.vue";
 import Community from "@/components/Community.vue";
 import Offer from "@/components/Offer.vue";
 import Mentors from "@/components/Mentors.vue";
+import Reviews from "@/components/Reviews.vue";
 
 export default {
   name: "TheHome",
@@ -28,6 +30,7 @@ export default {
     Community,
     Offer,
     Mentors,
+    Reviews,
   },
 };
 </script>

@@ -36,6 +36,7 @@ export default {
 </script>
 
 <style lang="scss">
+@use "src/styles/variables" as var;
 .mentors-banner__btn:hover {
   background-color: #F31D1D;
 }
