@@ -7,7 +7,6 @@
     <div class="reviews-cont__list">
       <ul>
         <li>
-
           <div class="reviews-cont__person">
             <div class="reviews-cont__person--ava">
               <img src="" alt="">

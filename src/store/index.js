@@ -4,6 +4,7 @@ import why from "./modules/why";
 import benefits from "./modules/benefits";
 import offer from "./modules/offer";
 import mentors from "./modules/mentors";
+import reviews from "./modules/reviews";
 
 export default createStore({
   state: {},
@@ -15,6 +16,7 @@ export default createStore({
     why,
     benefits,
     offer,
-    mentors
+    mentors,
+    reviews,
   },
 });
