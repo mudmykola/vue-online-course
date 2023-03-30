@@ -36,9 +36,6 @@
         </li>
       </ul>
     </div>
-<!--<div class="reviews-cont__btn">-->
-<!--  <button @click="createNewReview">Create comment</button>-->
-<!--</div>-->
   </div>
 </template>
 
