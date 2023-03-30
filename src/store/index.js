@@ -5,6 +5,7 @@ import benefits from "./modules/benefits";
 import offer from "./modules/offer";
 import mentors from "./modules/mentors";
 import reviews from "./modules/reviews";
+import asked from "@/store/modules/asked";
 
 export default createStore({
   state: {},
@@ -18,5 +19,6 @@ export default createStore({
     offer,
     mentors,
     reviews,
+    asked,
   },
 });
