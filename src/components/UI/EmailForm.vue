@@ -1,31 +1,31 @@
 <template>
-
   <form class="email" @submit.prevent="sendEmail">
     <label for="email" v-for="(btn, idx) in buttons" :key="idx">
       <input
-        class="email-input"
-        placeholder="Your email"
-        required
-        v-model="email"
-        type="email"
-        name="email"
+          class="email-input"
+          placeholder="Your email"
+          required
+          v-model="email"
+          type="email"
+          name="email"
       />
-      <button type="submit">{{ btn.link }}</button>
+      <button type="submit" :disabled="sending">{{ btn.link }}</button>
     </label>
 
-    <span v-if="msg.email">{{ msg.email }}</span>
+<!--    <span v-if="msg.email">{{ msg.email }}</span>-->
+    <span v-if="sent" class="success-message">Email sent successfully!</span>
   </form>
 </template>
 
 <script>
 import emailjs from "emailjs-com";
+
 export default {
   name: "EmailForm",
   data() {
     return {
       showModal: false,
       email: "",
-
       msg: [],
       buttons: [
         {
@@ -33,6 +33,8 @@ export default {
           state: true,
         },
       ],
+      sending: false,
+      sent: false,
     };
   },
   computed: {
@@ -54,25 +56,29 @@ export default {
         this.msg["email"] = "Please enter a valid email address";
       }
     },
-    sendEmail(e) {
+    async sendEmail(e) {
       try {
-        emailjs.sendForm(
-          "service_4w4kz6j",
-          "template_vujjikb",
-          e.target,
-          "qu0ktEzf6O9DZCggs",
-          {
-            email: this.email,
-          }
+        this.sending = true;
+        await emailjs.sendForm(
+            "service_4w4kz6j",
+            "template_vujjikb",
+            e.target,
+            "qu0ktEzf6O9DZCggs",
+            {
+              email: this.email,
+            }
         );
+        this.sent = true;
       } catch (error) {
         console.log({ error });
       }
       this.email = "";
+      this.sending = false;
     },
   },
 };
 </script>
+
 
 <style lang="scss">
 @use "src/styles/variables" as var;
@@ -111,9 +117,11 @@ export default {
       }
     }
   }
-
   span {
     color: var.$c200;
+  }
+  .success-message {
+    color: green;
   }
 }
 // 768

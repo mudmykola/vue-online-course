@@ -46,6 +46,18 @@ export default {
 
             },
         ],
+        askedSend: [
+            {
+              id: 1,
+                subtitle: 'JOIN NOW',
+                title: 'Stream anywhere.\n' +
+                    'Cancel anytime.',
+                desc: 'Come on, register yourself to join online classes with.\n' +
+                    'register with your email account and submit now,',
+                img: 'asked-send-img.png',
+                aliImg: 'asked-send-img',
+            },
+        ],
     },
     getters: {
         ASKED_ACCORDION(state) {
@@ -53,7 +65,10 @@ export default {
         },
         ASKED_TITLE(state){
             return state.askedTitle;
-        }
+        },
+        ASKED_SEND(state){
+          return state.askedSend;
+        },
     },
 
 };
