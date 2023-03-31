@@ -12,7 +12,10 @@
            :key="idx.id"
       >
         <button class="asked-accordion__box"
-                @click="toogleAccordion(idx)">
+                :class="{'active' : accordion.active, 'hovered': accordion.hovered }"
+                @mouseenter="accordion.hovered = true"
+                @mouseleave="accordion.hovered = false"
+                @click="toogleAccordion(idx) ">
           <h2>{{ accordion.btn }}</h2>
           <span class="asked-accordion__icon"
                 :class="{'rotate': accordion.active}"
@@ -24,6 +27,7 @@
           <p>{{ accordion.desc }}</p>
         </div>
       </div>
+      <AskedSend />
     </div>
   </div>
 
@@ -31,9 +35,13 @@
 
 <script>
 import {mapGetters} from "vuex";
-
+import AskedSend from "@/components/UI/AskedSend.vue";
 export default {
   name: "TheAsked",
+
+  components: {
+    AskedSend,
+  },
   props: {
     isAsked: {
       type: Object,
@@ -58,9 +66,12 @@ export default {
   methods: {
     toogleAccordion(idx) {
       this.ASKED_ACCORDION[idx].active = !this.ASKED_ACCORDION[idx].active;
+      this.active = !this.active;
 
-    }
-  },
+
+    },
+
+  }
 }
 </script>
 
@@ -104,6 +115,11 @@ export default {
       width: 100%;
       margin-top: 32px;
       @extend %dtrans;
+      &.active{
+        @extend  %border-ef;
+        @extend  %htrans;
+
+      }
       &:hover{
         @extend  %border-ef;
         @extend  %htrans;
@@ -116,6 +132,10 @@ h2{
 }
     }
     &__text{
+      animation-name: asked-accordion__text;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
       background: var.$c100;
       width: 100%;
       padding: 30px;
@@ -134,7 +154,16 @@ h2{
 
     }
   }
+  @keyframes asked-accordion__text {
+    from {
 
+      opacity: 0;
+    }
+    to {
+
+      opacity: 1;
+    }
+  }
   .rotate {
     transition: transform 0.3s ease;
   }
