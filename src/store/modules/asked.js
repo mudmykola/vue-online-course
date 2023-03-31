@@ -1,16 +1,13 @@
 export default {
     state: {
         askedContent: [
-            {
-               title: 'Frequently Asked Questions',
-                subtitle: 'Browser our faq’s below, if you can not find the' +
-                    ' answer at Edumena',
-            },
+
             {
                 id: 1,
                 active: false,
                 btn: 'How much should i pay for online class?',
-                desc: '“This is the first time I found a professional online class h that they have many instructors to explain the material. Thanks”',
+                desc: '“This is the first time I found a professional online class h that they have many instructors to explain the material. Thanks”' +
+                    '“This is the first time I found a professional online class h that they have many instructors to explain the material. Thanks”',
             },
             {
                 id: 2,
@@ -38,11 +35,24 @@ export default {
                 desc: '“This is the first time I found a professional online class h that they have many instructors to explain the material. Thanks”',
 
             },
+
+        ],
+        askedTitle: [
+            {
+                id:1,
+                title: 'Frequently Asked Questions',
+                subtitle: 'Browser our faq’s below, if you can not find the' +
+                    ' answer at Edumena',
+
+            },
         ],
     },
     getters: {
         ASKED_ACCORDION(state) {
             return state.askedContent;
+        },
+        ASKED_TITLE(state){
+            return state.askedTitle;
         }
     },
 

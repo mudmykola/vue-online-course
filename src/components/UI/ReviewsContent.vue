@@ -36,6 +36,7 @@
         </li>
       </ul>
     </div>
+    <div class="reviews-cont__line"></div>
   </div>
 </template>
 
@@ -182,6 +183,10 @@ export default {
         color: var.$c700;
       }
     }
+  }
+  &__line{
+    margin: 78px 0 47px;
+    border: 1px solid var.$default;
   }
 
 }
