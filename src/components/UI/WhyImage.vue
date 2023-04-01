@@ -23,6 +23,17 @@ export default {
 .why-img {
   position: relative;
   z-index: 1;
+  img{
+    @extend %dtrans;
+  }
+
+ img:hover{
+   -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   @extend  %htrans;
+ }
+
   &::after {
     position: absolute;
     content: "";

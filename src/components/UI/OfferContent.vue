@@ -184,6 +184,16 @@ export default {
   }
   &__image{
     position: relative;
+    img{
+      @extend %dtrans;
+    }
+
+    img:hover{
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      @extend  %htrans;
+    }
     &:after{
       position: absolute;
       content: '';

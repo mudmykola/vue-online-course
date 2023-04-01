@@ -4,6 +4,7 @@ html,
 body {
   height: 100%;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -16,7 +17,7 @@ a {
 body {
   font-family: var.$font;
   color: var.$c100;
-  background-color: var.$c400;
+  background: var.$c400;
   font-size: 13px;
   line-height: 17px;
   font-weight: $font-r;

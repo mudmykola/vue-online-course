@@ -37,8 +37,13 @@ export default {
 
 <style lang="scss">
 @use "src/styles/variables" as var;
-.mentors-banner__btn:hover {
-  background-color: #F31D1D;
+.mentors-banner__btn {
+  @extend %dtrans;
+  &:hover{
+    background-color: #F31D1D;
+    @extend %htrans;
+  }
+
 }
 // 768
 @media (max-width: 768px) {

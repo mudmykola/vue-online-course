@@ -1,68 +1,54 @@
 <template>
-  <footer :class="footer">
-    <label for="dark-mode-switch" class="toggle">
-      <input id="dark-mode-switch" type="checkbox" v-model="isDarkMode">
-      <span class="toggle-switch"></span>
-    </label>
+  <footer class="footer" :style="{color: footerColor}">
+    <div class="container">
+      <div class="footer-inner" >
+    <FooterContent />
+      </div>
+    </div>
 
   </footer>
 </template>
 
 <script>
+import FooterContent from "@/components/UI/FooterContent.vue";
+
 export default {
   name: "TheFooter",
-  data(){
-    return{
-      isDarkMode: false,
-    }
+  components: {
+    FooterContent,
   },
-  computed: {
-  footer(){
-    return {
-      'dark-mode': this.isDarkMode,
-      'light-mode': !this.isDarkMode,
-    }
+  props: {
+    footerColor: {
+      type: String,
+      required: true,
+      default: '#fff',
+
+    },
+
+
   },
-  },
+
 };
 </script>
 
 <style lang="scss">
 @use "src/styles/variables" as var;
-.dark-mode {
-  background-color: var.$c100;
-  color: var.$default;
+
+// 768
+@media (max-width: 768px) {
 }
 
-.light-mode {
-  background-color: var.$default;
-  color: var.$c100;
-}
-.toggle {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
+// 600
+@media (max-width: 600px) {
 }
 
-.toggle input[type="checkbox"] {
-  display: none;
+// 480
+@media (max-width: 480px) {
 }
 
-.toggle .toggle-switch {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 14px;
-  border-radius: 12px;
-  background-color: #ccc;
-  transition: background-color 0.2s ease-in-out;
-}
+// 320
+@media (max-width: 320px) {
 
-.toggle input[type="checkbox"]:checked + .toggle-switch {
-  background-color: #3b3b3b;
 }
-
 
 </style>

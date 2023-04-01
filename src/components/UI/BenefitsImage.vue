@@ -24,6 +24,16 @@ export default {
 .benefits-image {
   position: relative;
   z-index: 999;
+  img{
+    @extend %dtrans;
+  }
+
+  img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    @extend  %htrans;
+  }
   &::after {
     position: absolute;
     content: "";

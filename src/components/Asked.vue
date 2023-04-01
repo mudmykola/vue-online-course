@@ -168,5 +168,17 @@ h2{
     transition: transform 0.3s ease;
   }
 }
+// 768
+@media (max-width: 768px) {
+}
+// 600
+@media (max-width: 600px) {
+}
+// 480
+@media (max-width: 480px) {
+}
+// 320
+@media (max-width: 320px) {
 
+}
 </style>

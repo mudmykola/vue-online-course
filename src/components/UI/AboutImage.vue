@@ -22,6 +22,16 @@ export default {
 @use "src/styles/variables" as var;
 .about-image {
   position: relative;
+  img{
+    @extend %dtrans;
+  }
+
+  img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    @extend  %htrans;
+  }
   &::after {
     position: absolute;
     content: "";

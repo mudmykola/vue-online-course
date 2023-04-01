@@ -1,6 +1,6 @@
 <template>
-  <div class="why-content">
-    <h2>{{ title }}</h2>
+  <div class="why-content" data-aos="zoom-in" >
+    <h2 >{{ title }}</h2>
     <p>{{ desc }}</p>
     <ul>
       <li v-for="item in getWhyCheck" :key="item.id">
@@ -64,6 +64,7 @@ export default {
       display: flex;
       align-items: center;
       width: 275px;
+
       p {
         margin-left: 12px;
         font-size: 18px;

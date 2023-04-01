@@ -6,6 +6,7 @@ import offer from "./modules/offer";
 import mentors from "./modules/mentors";
 import reviews from "./modules/reviews";
 import asked from "@/store/modules/asked";
+import footer from "@/store/modules/footer";
 
 export default createStore({
   state: {},
@@ -20,5 +21,6 @@ export default createStore({
     mentors,
     reviews,
     asked,
+    footer,
   },
 });

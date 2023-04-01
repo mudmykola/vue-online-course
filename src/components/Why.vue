@@ -1,7 +1,8 @@
 <template>
-  <div class="why" :style="{ 'background-color': bgColor }">
+  <div class="why"  :style="{ 'background-color':
+  bgColor }">
     <div class="container">
-      <div class="why-inner">
+      <div class="why-inner"   >
         <WhyContent />
         <WhyImage />
       </div>
@@ -13,12 +14,14 @@
 import WhyContent from "@/components/UI/WhyContent.vue";
 import WhyImage from "@/components/UI/WhyImage.vue";
 
+
 export default {
   name: "TheWhy",
   components: {
     WhyContent,
     WhyImage,
   },
+
   data() {
     return {
       bgColor: "#151515",
