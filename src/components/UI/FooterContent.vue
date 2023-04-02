@@ -17,7 +17,7 @@
         </li>
         <div class="footer-content__copy" v-for="copy in FOOTER_COPY"
              :key="copy">
-          <p :style="{marginTop: '40px'}">{{copy.copy}}</p>
+          <p :style="{marginTop: '40px'}">{{ copy.copy }}</p>
         </div>
 
       </ul>
@@ -35,8 +35,12 @@
 <script>
 import {mapGetters} from "vuex";
 
+
 export default {
   name: "FooterContent",
+  components: {
+
+  },
   props: {
     footerBg: {
       type: String,

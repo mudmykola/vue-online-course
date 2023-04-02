@@ -2,6 +2,7 @@
   <div class="header" :style="bg">
     <Navigation />
     <HeaderContent />
+
   </div>
 </template>
 
@@ -25,6 +26,7 @@ export default {
   components: {
     Navigation,
     HeaderContent,
+
   },
 };
 </script>
