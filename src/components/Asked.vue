@@ -67,8 +67,6 @@ export default {
     toogleAccordion(idx) {
       this.ASKED_ACCORDION[idx].active = !this.ASKED_ACCORDION[idx].active;
       this.active = !this.active;
-
-
     },
 
   }
@@ -116,9 +114,9 @@ export default {
       margin-top: 32px;
       @extend %dtrans;
       &.active{
+        display: flex;
         @extend  %border-ef;
         @extend  %htrans;
-
       }
       &:hover{
         @extend  %border-ef;
@@ -160,7 +158,6 @@ h2{
       opacity: 0;
     }
     to {
-
       opacity: 1;
     }
   }
