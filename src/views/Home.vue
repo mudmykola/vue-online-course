@@ -8,7 +8,7 @@
   <Mentors />
   <Reviews />
   <Asked />
-<ScrollToTop />
+
 </template>
 
 <script>
@@ -23,7 +23,7 @@ import Offer from "@/components/Offer.vue";
 import Mentors from "@/components/Mentors.vue";
 import Reviews from "@/components/Reviews.vue";
 import Asked from "@/components/Asked.vue";
-import ScrollToTop from "@/components/UI/ScrollToTop.vue";
+
 
 export default {
   name: "TheHome",
@@ -37,8 +37,8 @@ export default {
     Mentors,
     Reviews,
     Asked,
-    ScrollToTop,
 
   },
+
 };
 </script>

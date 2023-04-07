@@ -1,15 +1,25 @@
 <template>
   <main class="main-content">
-    <router-view />
+    <router-view/>
+    <ScrollToTop :scrollToTop="scrollToTop" @click="scrollToTop" />
   </main>
-  <Footer />
+  <Footer/>
 </template>
 
 <script>
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/UI/ScrollToTop.vue";
 
 export default {
-  components: { Footer },
+  components: {Footer, ScrollToTop,},
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    },
+  },
 };
 </script>
 

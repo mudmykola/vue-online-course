@@ -1,5 +1,5 @@
 <template>
-  <div class="scroll-to__top" v-show="showBtn" @click="toTop">
+  <div class="scroll-to__top" v-show="showBtn" @click="scrollToTop">
     <p>Top</p>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
     });
   },
   methods: {
-    toTop() {
+    scrollToTop() {
       window.scrollTo({
         top: 0,
         behavior: "smooth",

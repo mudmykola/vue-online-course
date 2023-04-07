@@ -3,6 +3,8 @@
     <div class="container">
       <div class="footer-inner">
         <FooterContent/>
+
+
       </div>
     </div>
   </footer>
@@ -22,10 +24,7 @@ export default {
       type: String,
       required: true,
       default: '#fff',
-
     },
-
-
   },
 
 };
