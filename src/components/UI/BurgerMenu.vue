@@ -78,10 +78,22 @@ export default {
 
 // 600
 @media (max-width: 600px) {
+  .burger {
+    display: block;
+  }
+  .bm-burger-button{
+    left: 88%;
+  }
 }
 
 // 480
 @media (max-width: 480px) {
+  .burger {
+    display: block;
+  }
+  .bm-burger-button{
+    left: 85%;
+  }
 }
 
 // 320

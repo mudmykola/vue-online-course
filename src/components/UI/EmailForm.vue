@@ -126,12 +126,75 @@ export default {
 }
 // 768
 @media (max-width: 768px) {
+  .email {
+    label {
+      input {
+        width: 200px;
+        height: 35px;
+        border-radius: 8px 0 0 8px;
+        font-size: 12px;
+        line-height: 20px;
+        border-left-color: none;
+      }
+      button {
+        display: block;
+        height: 35px;
+        padding: 0 10px;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 0 8px 8px 0;
+        border: none;
+      }
+    }
+  }
 }
 // 600
 @media (max-width: 600px) {
+  .email {
+    label {
+      input {
+        width: 200px;
+        height: 35px;
+        border-radius: 8px 0 0 8px;
+        font-size: 12px;
+        line-height: 20px;
+        border-left-color: none;
+      }
+      button {
+        display: block;
+        height: 35px;
+        padding: 0 10px;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 0 8px 8px 0;
+        border: none;
+      }
+    }
+  }
 }
 // 480
 @media (max-width: 480px) {
+  .email {
+    label {
+      input {
+        width: 200px;
+        height: 35px;
+        border-radius: 8px 0 0 8px;
+        font-size: 12px;
+        line-height: 20px;
+        border-left-color: none;
+      }
+      button {
+        display: block;
+        height: 35px;
+        padding: 0 10px;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 0 8px 8px 0;
+        border: none;
+      }
+    }
+  }
 }
 // 320
 @media (max-width: 320px) {

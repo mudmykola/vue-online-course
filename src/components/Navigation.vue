@@ -93,12 +93,39 @@ export default {
 }
 // 768
 @media (max-width: 768px) {
+  .navigation {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    &-menu {
+     &__link{
+       font-size: 12px;
+       line-height: 16px;
+     }
+    }
+  }
 }
 // 600
 @media (max-width: 600px) {
+  .navigation {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    &-menu {
+      display: none;
+    }
+  }
 }
 // 480
 @media (max-width: 480px) {
+  .navigation {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    &-menu {
+      display: none;
+    }
+  }
 }
 // 320
 @media (max-width: 320px) {

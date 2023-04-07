@@ -84,12 +84,63 @@ export default {
 }
 // 768
 @media (max-width: 768px) {
+  .header-cont {
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 50px;
+
+    h1 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__state {
+      margin-bottom: 20px;
+    }
+  }
 }
 // 600
 @media (max-width: 600px) {
+  .header-cont {
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 50px;
+
+    h1 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__state {
+      margin-bottom: 20px;
+    }
+  }
 }
 // 480
 @media (max-width: 480px) {
+  .header-cont {
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 50px;
+
+    h1 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__state {
+      margin-bottom: 20px;
+    }
+  }
 }
 // 320
 @media (max-width: 320px) {

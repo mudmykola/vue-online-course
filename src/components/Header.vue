@@ -39,12 +39,21 @@ export default {
 }
 // 768
 @media (max-width: 768px) {
+  .header {
+    height: 100%;
+  }
 }
 // 600
 @media (max-width: 600px) {
+  .header {
+    height: 100%;
+  }
 }
 // 480
 @media (max-width: 480px) {
+  .header {
+    height: 100%;
+  }
 }
 // 320
 @media (max-width: 320px) {
