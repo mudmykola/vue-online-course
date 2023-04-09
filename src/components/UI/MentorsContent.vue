@@ -237,59 +237,39 @@ export default {
 
 // 320
 @media (max-width: 320px) {
-  .mentors {
-    &-content {
+  .mentors-content {
+    width: 290px;
+    margin-top: 50px;
+
+    &__top {
+      padding-top: 30px;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__title {
       width: 290px;
-      margin-top: 50px;
-      &__top {
-        padding-top: 30px;
-        flex-direction: column;
-        width: 100%;
-      }
-      &__title {
-        width: 290px;
 
-        h2 {
-          font-size: 30px;
-          line-height: 35px;
-        }
-
-        p {
-          font-size: 12px;
-          line-height: 16px;
-        }
+      h2 {
+        font-size: 30px;
+        line-height: 35px;
       }
-      &__item {
-        ul {
-          margin-top: 50px;
-          grid-template-columns: repeat(1, 1fr);
-        }
+
+      p {
+        font-size: 12px;
+        line-height: 16px;
       }
     }
-    &-video{
-      &__title{
-        h2{
-          font-size: 30px;
-          line-height: 35px;
-        }
-        p{
-          width: 100%;
-          font-size: 12px;
-          line-height: 16px;
-        }
-      }
-      &__list{
 
-        ul{
-          grid-template-columns: repeat(1,1fr);
-          li{
-            width: 290px;
-          }
-        }
-
+    &__item {
+      ul {
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
       }
     }
   }
 
 }
+
+
 </style>

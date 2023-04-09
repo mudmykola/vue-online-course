@@ -67,6 +67,26 @@ export default {
 }
 // 320
 @media (max-width: 320px) {
+.mentors-banner{
+  width: 290px;
+  &__box{
 
+    flex-direction: column;
+    h2{
+      width: 100%;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+  &__btn{
+    display: block;
+    max-width: 90%;
+button{
+
+}
+  }
+}
 }
 </style>

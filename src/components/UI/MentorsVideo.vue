@@ -195,6 +195,31 @@ components:{
 }
 // 320
 @media (max-width: 320px) {
+  .mentors-video{
 
-}
+      &__title{
+        h2{
+          font-size: 30px;
+          line-height: 35px;
+        }
+        p{
+          width: 100%;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      &__list{
+
+        ul{
+          grid-template-columns: repeat(1,1fr);
+          li{
+            width: 290px;
+          }
+        }
+
+      }
+    }
+  }
+
+
 </style>
