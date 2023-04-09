@@ -34,13 +34,14 @@
 
     </div>
     <MentorsVideo v-for="item in content" :key="item.id"
-                  :mentorsVideo_data="item" />
+                  :mentorsVideo_data="item"/>
   </div>
 </template>
 
 <script>
 import {mapGetters, mapActions} from "vuex";
 import MentorsVideo from "@/components/UI/MentorsVideo.vue";
+
 export default {
   name: "MentorsContent",
   data() {
@@ -50,7 +51,7 @@ export default {
       isActive: false,
       content: [
         {
-          id:1,
+          id: 1,
           title: 'Explore courses from industry leaders.',
           desc: 'Mentors around the world  teach millions of participants\n' +
               'on Edumena. We provide the tools and skills',
@@ -66,7 +67,7 @@ export default {
       },
     }
   },
-  components:{
+  components: {
     MentorsVideo,
   },
   computed: {
@@ -95,6 +96,7 @@ export default {
 
 .mentors-content {
   margin-top: 147px;
+
   &__top {
     display: flex;
     align-items: center;
@@ -131,12 +133,12 @@ export default {
       border: none;
       @extend %dtrans;
 
-      &.active{
-      background: var.$c300;
+      &.active {
+        background: var.$c300;
         @extend %htrans;
         color: var.$default;
         @extend %border-ef;
-    }
+      }
 
     }
   }
@@ -154,10 +156,11 @@ export default {
         background: var.$c400;
         border-radius: 20px;
         cursor: pointer;
-        @extend  %dtrans;
-        &:hover{
-          @extend  %border-ef;
-          @extend  %htrans;
+        @extend %dtrans;
+
+        &:hover {
+          @extend %border-ef;
+          @extend %htrans;
         }
       }
     }
@@ -217,5 +220,76 @@ export default {
 
     }
   }
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+
+}
+
+// 320
+@media (max-width: 320px) {
+  .mentors {
+    &-content {
+      width: 290px;
+      margin-top: 50px;
+      &__top {
+        padding-top: 30px;
+        flex-direction: column;
+        width: 100%;
+      }
+      &__title {
+        width: 290px;
+
+        h2 {
+          font-size: 30px;
+          line-height: 35px;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      &__item {
+        ul {
+          margin-top: 50px;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+    &-video{
+      &__title{
+        h2{
+          font-size: 30px;
+          line-height: 35px;
+        }
+        p{
+          width: 100%;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      &__list{
+
+        ul{
+          grid-template-columns: repeat(1,1fr);
+          li{
+            width: 290px;
+          }
+        }
+
+      }
+    }
+  }
+
 }
 </style>

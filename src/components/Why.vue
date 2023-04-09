@@ -57,6 +57,53 @@ export default {
 }
 // 480
 @media (max-width: 480px) {
+  .why {
+    width: 450px;
+    padding: 50px 0;
+    margin: 0 auto;
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+      justify-content: center;
+      width: 450px;
+    }
+    &-content{
+      width: 100%;
+      h2{
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 12px;
+        line-height: 16px;
+      }
+      ul{
+        gap: 15px;
+        margin-top: 50px;
+        li{
+          width: 250px;
+          p{
+            font-size: 13px;
+            line-height: 17px;
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+    &-img{
+      margin-top: 45px;
+      &:after{
+        width: 50%;
+        left: 0;
+      }
+      img{
+        width: 70%;
+      }
+    }
+  }
 }
 // 320
 @media (max-width: 320px) {

@@ -66,6 +66,49 @@ export default {
 }
 // 480
 @media (max-width: 480px) {
+  .about {
+    padding-top: 50px;
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    &-inner {
+      flex-direction: column;
+      width: 100%;
+      &__line {
+        width: 450px;
+      }
+
+    }
+    &-item{
+      width: 450px;
+      text-align: center;
+      margin: 0 auto;
+      margin-right: 0;
+      &__links{
+        align-items: center;
+      }
+      h2{
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+    }
+    &-image{
+      margin-top: 45px;
+      &:after{
+        width: 50%;
+        left: 0;
+      }
+      img{
+        width: 70%;
+      }
+    }
+  }
 }
 // 320
 @media (max-width: 320px) {
