@@ -72,10 +72,9 @@ export default {
 @media (max-width: 320px) {
   .community {
     width: 280px;
-
     h2 {
-      font-size: 40px;
-      line-height: 45px;
+      font-size: 30px;
+      line-height: 35px;
     }
 
   }

@@ -1,11 +1,12 @@
 <template>
   <div class="about-image">
-    <img :src="img" alt="alt" />
+    <img :src="img" alt="alt"/>
   </div>
 </template>
 
 <script>
 import aboutimgs from "@/assets/about-img.png";
+
 export default {
   name: "TheAboutImage",
   data() {
@@ -20,18 +21,21 @@ export default {
 
 <style lang="scss">
 @use "src/styles/variables" as var;
+
 .about-image {
   position: relative;
-  img{
+
+  img {
     @extend %dtrans;
   }
 
-  img:hover{
+  img:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
-    @extend  %htrans;
+    @extend %htrans;
   }
+
   &::after {
     position: absolute;
     content: "";
@@ -50,18 +54,29 @@ export default {
 // 768
 @media (max-width: 768px) {
 }
+
 // 600
 @media (max-width: 600px) {
 }
+
 // 480
 @media (max-width: 480px) {
 }
+
 // 320
 @media (max-width: 320px) {
   .about-image {
-    margin-top: 30px;
-    &:after {
-      width: 270px;
+    &-image {
+      margin-top: 45px;
+
+      &:after {
+        width: 50%;
+        left: 0;
+      }
+
+      img {
+        width: 70%;
+      }
     }
   }
 }

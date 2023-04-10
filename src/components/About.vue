@@ -113,11 +113,15 @@ export default {
 // 320
 @media (max-width: 320px) {
   .about {
+    width: 290px;
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
     &-inner {
       flex-direction: column;
-      width: 260px;
+      width: 290px;
       &__line {
-        width: 260px;
+        width: 100%;
       }
     }
   }

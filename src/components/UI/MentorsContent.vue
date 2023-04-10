@@ -232,6 +232,45 @@ export default {
 
 // 480
 @media (max-width: 480px) {
+  .mentors-content {
+    max-width:  450px;
+
+    margin: 0 auto;
+
+    &__top {
+      padding-top: 30px;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__title {
+      width: 450px;
+
+      h2 {
+        font-size: 35px;
+        line-height: 40px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    &__item {
+      width: 100% ;
+      margin: 0 auto;
+      align-items: center;
+      ul {
+
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        li{
+          margin: auto;
+        }
+      }
+    }
+  }
 
 }
 

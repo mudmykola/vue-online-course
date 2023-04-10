@@ -173,9 +173,115 @@ h2{
 }
 // 480
 @media (max-width: 480px) {
+  .asked{
+    width: 450px;
+    margin: 0 auto;
+    &-title{
+      h2{
+        font-size: 35px;
+        line-height: 40px;
+      }
+      p{
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+    }
+    &-accordion{
+      &__box{
+        width: 450px;
+        h2{
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+      &__text{
+        padding: 15px;
+        p{
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+    &-send{
+      width: 100%;
+      &__text{
+        width: 450px;
+        padding: 50px 10px;
+        text-align: center;
+        span{
+          font-size: 12px;
+          line-height: 16px;
+        }
+        h2{
+          width: 100%;
+          font-size: 35px;
+          line-height: 40px;
+        }
+        p{
+          width: 100%;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
 }
 // 320
 @media (max-width: 320px) {
+.asked{
+  width: 290px;
+  &-title{
+    h2{
+      font-size: 30px;
+      line-height: 35px;
+    }
+    p{
+      width: 100%;
+      font-size: 12px;
+      line-height: 16px;
+    }
 
+  }
+  &-accordion{
+    &__box{
+      width: 290px;
+      h2{
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    &__text{
+      padding: 15px;
+      p{
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+  &-send{
+    width: 100%;
+    &__text{
+      width: 290px;
+      padding: 50px 10px;
+      text-align: center;
+      span{
+        font-size: 12px;
+        line-height: 16px;
+      }
+      h2{
+        width: 100%;
+        font-size: 30px;
+        line-height: 35px;
+      }
+      p{
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}
 }
 </style>

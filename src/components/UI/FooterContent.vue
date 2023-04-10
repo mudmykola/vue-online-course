@@ -149,4 +149,51 @@ export default {
   }
 
 }
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+  .footer-content{
+    flex-direction: column;
+    padding: 15px;
+    &__contact{
+      width: 100%;
+    }
+    &__menu{
+      margin-top: 15px;
+    }
+    &__social{
+      margin-top: 15px;
+    }
+    &__copy{
+      display: none;
+    }
+  }
+}
+
+// 320
+@media (max-width: 320px) {
+ .footer-content{
+   flex-direction: column;
+   padding: 15px;
+   &__contact{
+     width: 100%;
+   }
+   &__menu{
+     margin-top: 15px;
+   }
+   &__social{
+     margin-top: 15px;
+   }
+   &__copy{
+     display: none;
+   }
+ }
+}
 </style>

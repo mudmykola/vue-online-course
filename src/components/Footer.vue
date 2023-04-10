@@ -3,8 +3,6 @@
     <div class="container">
       <div class="footer-inner">
         <FooterContent/>
-
-
       </div>
     </div>
   </footer>
@@ -47,7 +45,14 @@ export default {
 
 // 320
 @media (max-width: 320px) {
+  .footer {
+    width: 290px;
+    margin: 0 auto;
 
+    &-inner {
+      width: 100%;
+    }
+  }
 }
 
 </style>
