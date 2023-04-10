@@ -243,6 +243,67 @@ export default {
 
 // 600
 @media (max-width: 600px) {
+  .offer-content {
+    margin-top: 75px;
+    width: 550px;
+    margin: 0 auto;
+    ul {
+      li + li {
+        margin-top: 75px;
+      }
+    }
+
+    &__text {
+      min-width: 100%;
+
+      &--el {
+        &-1:after {
+          width: 150px;
+          height: 100px;
+          left: 0;
+          top: 120%;
+        }
+
+        &-3:after {
+          width: 150px;
+          height: 100px;
+          left: 0;
+          top: 120%;
+        }
+      }
+      span {
+        font-size: 13px;
+        line-height: 18px;
+      }
+      h2 {
+        font-size: 30px;
+        line-height: 35px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      img {
+        width: 25px;
+        height: 10px;
+        margin-left: 10px;
+      }
+    }
+    &__image {
+      height: 300px;
+      &--el {
+        &-2:before {
+          width: 150px;
+          height: 100px;
+          left: 115px;
+          bottom: -50%;
+        }
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
 }
 
 // 480

@@ -53,18 +53,23 @@ export default {
 
 // 600
 @media (max-width: 600px) {
+  .community {
+    width: 550px;
+    h2 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
 }
 
 // 480
 @media (max-width: 480px) {
   .community {
     width: 450px;
-
     h2 {
       font-size: 35px;
       line-height: 40px;
     }
-
   }
 }
 

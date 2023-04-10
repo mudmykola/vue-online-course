@@ -55,6 +55,58 @@ export default {
 }
 // 600
 @media (max-width: 600px) {
+  .benefits {
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    &-inner {
+      width: 550px;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    &-image{
+      &:after{
+        width: 50%;
+        left: 0;
+      }
+      img{
+        width: 70%;
+      }
+    }
+    &-item{
+      padding-top: 45px;
+      width: 100%;
+      margin: 0 auto;
+      ul{
+        gap: 15px;
+        margin-top: 50px;
+        li{
+          width: 250px;
+          text-align: left;
+          margin: 0 auto;
+          h3{
+            font-size: 12px;
+            line-height: 16px;
+
+          }
+          span{
+            font-size: 13px;
+            line-height: 17px;
+
+          }
+        }
+      }
+      h2{
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
 }
 // 480
 @media (max-width: 480px) {
