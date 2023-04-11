@@ -118,6 +118,46 @@ export default {
 }
 // 768
 @media (max-width: 768px) {
+  .community-element {
+    max-width: 750px;
+    margin: auto;
+    margin-top: 80px;
+    gap: 90px;
+    display: grid;
+    &__grow,
+    &__net,
+    &__learn {
+      width: 300px;
+      height: 300px;
+    }
+    &__grow {
+      &:after {
+        display: none;
+      }
+      &:before {
+        right: 43%;
+        top: 110%;
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+      }
+    }
+    &__net {
+      margin: 0;
+      &:after {
+        right: 43%;
+        top: 110%;
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        transform: rotate(90deg);
+      }
+    }
+    &__box {
+      gap: 90px;
+      flex-direction: column;
+    }
+  }
 }
 // 600
 @media (max-width: 600px) {

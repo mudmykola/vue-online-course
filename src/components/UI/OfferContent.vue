@@ -239,6 +239,54 @@ export default {
 
 // 768
 @media (max-width: 768px) {
+  .offer-content {
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    &__text {
+      width: 300px;
+
+      span {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      h2 {
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      &--el {
+        &-1:after {
+          width: 25%;
+        }
+        &-3:after {
+          width: 25%;
+        }
+      }
+    }
+
+    &__image {
+      width: 250px;
+&--el{
+  &-2:before{
+    width: 45%;
+    bottom: -80%;
+
+  }
+}
+      &:after {
+        width: 100px;
+        left: -9%;
+      }
+    }
+  }
 }
 
 // 600
@@ -247,6 +295,7 @@ export default {
     margin-top: 75px;
     width: 550px;
     margin: 0 auto;
+
     ul {
       li + li {
         margin-top: 75px;
@@ -271,26 +320,32 @@ export default {
           top: 120%;
         }
       }
+
       span {
         font-size: 13px;
         line-height: 18px;
       }
+
       h2 {
         font-size: 30px;
         line-height: 35px;
       }
+
       p {
         font-size: 12px;
         line-height: 16px;
       }
+
       img {
         width: 25px;
         height: 10px;
         margin-left: 10px;
       }
     }
+
     &__image {
       height: 300px;
+
       &--el {
         &-2:before {
           width: 150px;
@@ -299,6 +354,7 @@ export default {
           bottom: -50%;
         }
       }
+
       &:after {
         display: none;
       }
@@ -336,26 +392,32 @@ export default {
           top: 120%;
         }
       }
+
       span {
         font-size: 13px;
         line-height: 18px;
       }
+
       h2 {
         font-size: 30px;
         line-height: 35px;
       }
+
       p {
         font-size: 12px;
         line-height: 16px;
       }
+
       img {
         width: 25px;
         height: 10px;
         margin-left: 10px;
       }
     }
+
     &__image {
       height: 300px;
+
       &--el {
         &-2:before {
           width: 150px;
@@ -364,6 +426,7 @@ export default {
           bottom: -50%;
         }
       }
+
       &:after {
         display: none;
       }

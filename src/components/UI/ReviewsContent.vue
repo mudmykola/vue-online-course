@@ -193,10 +193,39 @@ export default {
 
 // 768
 @media (max-width: 768px) {
+  .reviews-cont{
+    margin:0 auto;
+    &__title{
+      margin-top: 50px;
+    }
+    &__list{
+      ul{
+        grid-template-columns: repeat(1,1fr);
+        li{
+          width: 100%;
+        }
+      }
+
+    }
+  }
 }
 
 // 600
 @media (max-width: 600px) {
+  .reviews-cont{
+    &__title{
+      margin-top: 50px;
+        }
+    &__list{
+      ul{
+        grid-template-columns: repeat(1,1fr);
+        li{
+          width: 100%;
+        }
+      }
+
+    }
+  }
 }
 
 // 480

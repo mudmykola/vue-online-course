@@ -42,9 +42,15 @@ export default {
 }
 // 768
 @media (max-width: 768px) {
+  .mentors{
+    margin-top: 50px;
+  }
 }
 // 600
 @media (max-width: 600px) {
+  .mentors{
+    margin-top: 50px;
+  }
 }
 // 480
 @media (max-width: 480px) {

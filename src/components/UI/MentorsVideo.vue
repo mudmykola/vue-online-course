@@ -186,9 +186,36 @@ components:{
 }
 // 768
 @media (max-width: 768px) {
+  .mentors-video{
+    &__list{
+      margin-bottom: 30px;
+      ul{
+        grid-template-columns: repeat(2,1fr);
+        li{
+          width: 250px;
+          margin: auto;
+        }
+      }
+
+    }
+  }
 }
 // 600
 @media (max-width: 600px) {
+  .mentors-video{
+
+    &__list{
+      margin-bottom: 30px;
+      ul{
+        grid-template-columns: repeat(2,1fr);
+        li{
+          width: 250px;
+          margin: auto;
+        }
+      }
+
+    }
+  }
 }
 // 480
 @media (max-width: 480px) {

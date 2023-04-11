@@ -49,6 +49,10 @@ export default {
 
 // 768
 @media (max-width: 768px) {
+  .community {
+    max-width: 750px;
+    margin: 0 auto;
+  }
 }
 
 // 600

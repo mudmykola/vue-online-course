@@ -58,9 +58,55 @@ export default {
 }
 // 768
 @media (max-width: 768px) {
+  .mentors-banner{
+
+    max-width: 750px;
+    margin: 0 auto;
+    &__box{
+
+      flex-direction: column;
+      h2{
+        width: 100%;
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+    &__btn{
+      display: block;
+      max-width: 90%;
+      button{
+
+      }
+    }
+  }
 }
 // 600
 @media (max-width: 600px) {
+  .mentors-banner{
+
+    width: 550px;
+    margin: 0 auto;
+    &__box{
+
+      flex-direction: column;
+      h2{
+        width: 100%;
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+    &__btn{
+      display: block;
+      max-width: 90%;
+      button{
+
+      }
+    }
+  }
 }
 // 480
 @media (max-width: 480px) {

@@ -51,6 +51,14 @@ export default {
 
 // 768
 @media (max-width: 768px) {
+  .why{
+    width: 750px;
+    padding: 50px 0;
+    margin: 0 auto;
+    &-img{
+      display: none;
+    }
+  }
 }
 // 600
 @media (max-width: 600px) {

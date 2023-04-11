@@ -78,10 +78,28 @@ export default {
 
 // 768
 @media (max-width: 768px) {
+  .about-item {
+    width: 750px;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 0;
+    &__links {
+      align-items: center;
+    }
+  }
 }
 
 // 600
 @media (max-width: 600px) {
+  .about-item {
+    width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 0;
+    &__links {
+      align-items: center;
+    }
+   }
 }
 
 // 480
